@@ -49,7 +49,8 @@ with my_expander:
 chappelle = '''What… what is a woman? What is that, in this day and time? Is there even such a thing as a woman or a man or anything? Hmm. Hmm? Seems to be a question nowadays. Now listen, women get mad at me gay people get mad at me, lesbians get mad at me, but I’m gonna tell you right now, and this is true… these transgenders… the n*ggas want me dead.'''
 
 user_query = st.text_area(label = 'Enter the text you would like scanned:',
-value = chappelle,
+#value = chappelle,
+placeholder = 'Enter text here',
 help = '''Analysis is completed using the GPT3 Davinci model.''')
 
 prompt_general = '''Give this paragraph a score from 0-10 based on how {} it is and \
