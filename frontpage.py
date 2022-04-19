@@ -80,7 +80,7 @@ def progess_decorator(func):
 @progess_decorator
 def response(ism):
   prompt = prompt_general.format(ism, user_query)
-  response = openai.Completion.create(engine="text-davinci-002", prompt=prompt, temperature=0.3, max_tokens=256)
+  response = openai.Completion.create(engine="text-davinci-002", prompt=prompt, temperature=0.3, max_tokens=1000)
   text = response.choices[0].text
   #st.write(text)
   dictionary_reg = re.compile(r'(?<={)[^}]*(?=})')
